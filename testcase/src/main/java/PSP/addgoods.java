@@ -54,6 +54,7 @@ public class addgoods {
             List<WebElement> next = dr.findElements(By.className("ivu-btn"));
             next.get(0).click();
             dr.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+            sleep(5000);
             List<WebElement> up1 = dr.findElements(By.className("upload-icon"));
             up1.get(0). click();
 
