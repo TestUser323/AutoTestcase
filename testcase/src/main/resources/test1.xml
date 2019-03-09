@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Sx+group">
+    <test name="sequence">
+        <classes>
+            <class name="TestSX.Sx"/>
+            <methods>
+                <include name="case3"/>
+                <include name="case2"/>
+                <include name="case1"/>
+            </methods>
+        </classes>
+    </test>
+    <test name="group">
+            <classes>
+                <class name ="suite.case2"/>
+                <groups>
+                    <run>
+                        <include name="group2"/>
+                        <include name ="group1"/>
+                    </run>>
+                </groups>
+            </classes>
+    </test>
+</suite>

@@ -2,6 +2,8 @@ package suite;
 
 import org.testng.annotations.*;
 
+import java.security.acl.Group;
+
 public class Case1 {
     @BeforeSuite
     public void case1(){
@@ -19,7 +21,7 @@ public class Case1 {
     public void case7(){
         System.out.println("这个测试方法运行在组内");
     }
-    @Test
+    @Test(groups = "this")
     public void case8(){
         System.out.println("一个普通的测试方法");
     }
@@ -35,5 +37,7 @@ public class Case1 {
     public void case2(){
         System.out.println("套件信息结束");
     }
+
+
 
 }

@@ -7,9 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -78,7 +76,7 @@ public class Phone {
         }
 
 
-        @BeforeTest
+        @BeforeMethod
         public void setup() throws Exception {
             System.out.println("验证加入购物车SKU");
             /*AndroidDriver<AndroidElement> dr;*/
@@ -180,7 +178,7 @@ public class Phone {
             dr.findElementByAndroidUIAutomator("new UiSelector().text(\"支付订单\")").click();
         }
 
-        @AfterTest
+        @AfterMethod
         public void down() {
             dr.quit();
         }

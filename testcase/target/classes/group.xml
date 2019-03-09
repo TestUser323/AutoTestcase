@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="group">
+    <test name="grouptest">
+        <classes>
+            <class name = "suite.case2"/>
+            <groups>
+                <run>
+                    <include name = "group2"/>
+                </run>
+            </groups>
+        </classes>
+    </test>
+    <test name = "group1">
+            <classes>
+                    <class name="suite.case2"/>
+                      <groups>
+                              <run>
+                              <include name = "group1"/>
+                              </run>
+                      </groups>
+            </classes>
+    </test>
+</suite>

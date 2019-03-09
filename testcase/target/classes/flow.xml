@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "flow">
+    <test name = "FlowTest">
+        <classes>
+            <class name="suite.case3"/>
+            <class name="suite.Parem.login"/>
+            <class name="suite.Parem.Pay"/>
+        </classes>
+    </test>
+</suite>
