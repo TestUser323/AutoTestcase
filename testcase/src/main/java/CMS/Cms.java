@@ -1,5 +1,6 @@
 package CMS;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -15,9 +16,11 @@ public class Cms {
         dr.manage().window().maximize();
         dr.navigate().refresh();
     }
+
     @AfterMethod
     public void shatdown(){
-        dr.quit();
+       /* dr.quit();*/
+       System.out.println("操作结束");
     }
 
 
