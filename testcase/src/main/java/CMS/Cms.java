@@ -8,6 +8,15 @@ import org.testng.annotations.*;
 public class Cms {
     public WebDriver dr;
 
+    /*公用延迟方式*/
+    public void sleep(int timeout){
+        try {
+            Thread.sleep(timeout);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
     @BeforeMethod
     public void open(){
         dr= new ChromeDriver();
