@@ -3,15 +3,14 @@ package CMS;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class Cms {
-    WebDriver dr = new ChromeDriver();
+    public WebDriver dr;
+
     @BeforeMethod
     public void open(){
-
+        dr= new ChromeDriver();
         dr.get("http://login.test.weidiango.com/?from=http%3A%2F%2Findex.test.weidiango.com%2Fshops");
         dr.manage().window().maximize();
         dr.navigate().refresh();

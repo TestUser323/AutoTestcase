@@ -3,7 +3,7 @@
     <test name = "FlowTest">
         <classes>
             <class name="CMS.Cms"/>
-           <!-- <class name="CMS.CMSlogin.login"/>-->
+            <class name="CMS.CMSlogin.login"/>
             <!--<class name="suite.Parem.Pay"/>-->
         </classes>
     </test>
